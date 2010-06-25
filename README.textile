@@ -22,9 +22,6 @@ h3. MOBILE_PATTERN
 
 	Regular expression to match mobile user in HTTP_USER_AGENT header.
 	default: (up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|windows ce|pda|mobile|mini|palm|netfront)
-	
-TEMPLATE_CONTEXT_PROCESSORS - add:
-    "django.core.context_processors.request"
 
 h2. USAGE
 
@@ -33,12 +30,9 @@ h3. MIDDLEWARE
 	In your settings.py add:
 	<pre>
 	MIDDLEWARE_CLASSES = (
-
 		(...) #your middleware classes
-
 		# if you added to you project's folder:
 		'your_project.django_mobile.middleware.MobileMiddleware' 
-
 		# if you installed on site-packages:
 		'django_mobile.middleware.MobileMiddleware' 
 	)		
