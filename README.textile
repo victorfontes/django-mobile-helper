@@ -19,6 +19,7 @@ REQUIREMENTS: django !
 h2. SETTINGS.py
 
 h3. MOBILE_PATTERN
+
 	Regular expression to match mobile user in HTTP_USER_AGENT header.
 	default: (up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|windows ce|pda|mobile|mini|palm|netfront)
 	
@@ -28,6 +29,7 @@ TEMPLATE_CONTEXT_PROCESSORS - add:
 h2. USAGE
 
 h3. MIDDLEWARE
+
 	In your settings.py add:
 	<pre>
 	MIDDLEWARE_CLASSES = (
