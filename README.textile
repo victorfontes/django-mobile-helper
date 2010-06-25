@@ -40,13 +40,14 @@ h3. MIDDLEWARE
 	
 	
 h3. DECORATOR
+
+	You can use it in any view function:
 	<pre>
 	from django_mobile.middleware import MobileMiddleware
 	
 	@login_required
 	@render_to(template='desktop.html', mobile_template='mobile_template.html')
 	def view_function(request):
-		
 		(...) # do your stuff here
 		return locals()
 	</pre>
