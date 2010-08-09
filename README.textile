@@ -1,6 +1,6 @@
 h1. django-mobile-helper
 
-A calendaring/scheduling application, featuring:
+Helps django developers to support mobile users, features:
 
  * Detection of requests starting with m. or mobile.yoursite.com
  * Detection of requests with HTTP_USER_AGENT of mobile browsers
